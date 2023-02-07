@@ -1,0 +1,1001 @@
+history
+  929  curl http://34.89.108.171
+  930  sudo systemctl stop apache2
+  931  sudo systemctl status apache2
+  932  clear
+  933  docker pull ubuntu/apache2
+  934  docker images
+  935  docker run -d --name apache2-container -p 8888:80 ubuntu/apache2 
+  936  curl http://localhost:8888
+  937  clear
+  938  docker ps -a
+  939  docker rm bb7e8a88
+  940  docker ps -a
+  941  curl http://localhost:8080
+  942  docker ps -a
+  943  curl http://localhost:8080
+  944  curl http://localhost:8888
+  945  docker ps -a
+  946  docker run -d --name apache2-container -e TZ=UTC -p 8080:80 ubuntu/apache2 
+  947  docker run -d --name apache2-container2 -e TZ=UTC -p 8080:80 ubuntu/apache2 
+  948  docker ps -a
+  949  curl http://localhost:8080
+  950  docker ps -a
+  951  docker logs 6875130
+  952  sudo systemctl start apache2
+  953  sudo systemctl stop apache2
+  954  docker ps-a
+  955  docker ps -a
+  956  docker stop 34.89.108.171
+  957  docker stop 6875130
+  958  doccker system prune
+  959  docker system prune
+  960  docker images
+  961  docker ps -a
+  962  docker stop e98b5ab
+  963  docker rm e98b5ab
+  964  docker system prune
+  965  docker images
+  966  exit
+  967  curl www.google.com
+  968  curl www.facebook.com
+  969  curl www.greencore.com
+  970  curl www.suntv.com
+  971  curl www.instagram.com
+  972  clear
+  973  sudo systemctl status docker
+  974  clear
+  975  docker images
+  976  ls
+  977  cd dockerlab/
+  978  ls
+  979  cd lab1/
+  980  ls
+  981  vi Dockerfile
+  982  cat Dockerfile 
+  983  vi app.py
+  984  cat app.py 
+  985  ls
+  986  clear
+  987  docker build -t python-image
+  988  docker build -t python-image .
+  989  docker images
+  990  clear
+  991  vi Dockerfile 
+  992  docker images
+  993  docker run -it --name pywebcontainer -p 8060:5000 python-image
+  994  docker ps -a
+  995  docker ps
+  996  docker rm 78e8867
+  997  docker ps -a
+  998  docker prune -d
+  999  docker prune 
+ 1000  docker prune -t
+ 1001  docker prune -f
+ 1002  docker image prune -a
+ 1003  clear
+ 1004  docker images
+ 1005  docker images -a
+ 1006  docker build -t pyrhon-image:1.0 .
+ 1007  docker images
+ 1008  docker run -it --name mypythoncont -p 8060:5000 pyrhon-image:1.0
+ 1009  cat Dockerfile 
+ 1010  cat app.py 
+ 1011  docker ps -a
+ 1012  docker rmi mypythoncont
+ 1013  docker rmi 8e25bd8c361e
+ 1014  docker rm 8e25bd8c361e
+ 1015  clear
+ 1016  docker images
+ 1017  docker run -itd --name mypycont pyrhon-image:1.0
+ 1018  cat Dockerfile 
+ 1019  docker ps -a
+ 1020  docker rm 8d6b1cb26bb1
+ 1021  docker images prune -a
+ 1022  docker images
+ 1023  docker image prune -a
+ 1024  vi Dockerfile 
+ 1025  docker build -t pyrhon-image:1.0 .
+ 1026  docker images
+ 1027  docker run -itd --name mypycont pyrhon-image:1.0
+ 1028  docker ps -a
+ 1029  docker rm 7b12dff1268f
+ 1030  docker images
+ 1031  docker ps
+ 1032  docker ps -a
+ 1033  docker run -itd --name mypycont -p8060:5000 pyrhon-image:1.0
+ 1034  docker ps
+ 1035  docker ps -a
+ 1036  docker rm 3fda0f0ce452
+ 1037  docker images
+ 1038  docker run -itd --name mypycont  pyrhon-image:1.0
+ 1039  docker ps
+ 1040  docker ps -a
+ 1041  docker rm da171fcc1807
+ 1042  docker run -it --name mypycont  pyrhon-image:1.0
+ 1043  docker ps -a
+ 1044  docker logs c300ebb13e97
+ 1045  docker images
+ 1046  docker ps 
+ 1047  docker ps -a
+ 1048  docker rm c300ebb13e97
+ 1049  clear
+ 1050  docker images
+ 1051  docker run --name mypycont  pyrhon-image:1.0
+ 1052  docker ps -a
+ 1053  docker rm 4c227276ff5c
+ 1054  cd /dev/
+ 1055  ls
+ 1056  cd
+ 1057  ls
+ 1058  cd dockerlab/lab1/
+ 1059  ls
+ 1060  cat Dockerfile 
+ 1061  cat app.py 
+ 1062  vi app.py 
+ 1063  docker images
+ 1064  docker images prune -a
+ 1065  docker image prune -a
+ 1066  docker images -a
+ 1067  docker ps -a
+ 1068  clear
+ 1069  docker build -tcpyimage:1.0 .
+ 1070  docker images
+ 1071  docker run -it --name pycontainer cpyimage:1.0
+ 1072  docker ps -a
+ 1073  docker rm 20429df468a4
+ 1074  clear
+ 1075  docker images
+ 1076  docker ps -a
+ 1077  docker run -itd --name pycontainer -p8060:5000 cpyimage:1.0
+ 1078  docker ps -a
+ 1079  curl http://35.189.119.200:8060
+ 1080  curl google.com
+ 1081  clear
+ 1082  docker ps -a
+ 1083  curl http://10.154.0.2:8060
+ 1084  docker ps -a
+ 1085  docker exec -it 05353221fefa /bin/bash
+ 1086  docker ps
+ 1087  docker inspect 05353221fefa
+ 1088  clear
+ 1089  docker inspect 05353221fefa
+ 1090  ping 172.17.0.2
+ 1091  curl http://172.17.0.2:5000
+ 1092  curl 172.17.0.2:5000
+ 1093  clear
+ 1094  docker ps -a
+ 1095  docker stop 05353221fefa
+ 1096  docker rm 05353221fefa
+ 1097  docker ps -A
+ 1098  docker ps -a
+ 1099  docker run -itd --name pycontainer -p80:5000 cpyimage:1.0
+ 1100  docker ps  -a
+ 1101  docker rm 25d2be78dfe3
+ 1102  clear
+ 1103  docker images
+ 1104  docker run -itd --name pycontainer -p8080:5000 cpyimage:1.0
+ 1105  docker ps 
+ 1106  clear
+ 1107  vi Dockerfile 
+ 1108  docker ps -a
+ 1109  docker stop 7bd216817768
+ 1110  docker rm 7bd216817768
+ 1111  docker images
+ 1112  docker build -t newimage:1.0 .
+ 1113  docker ps -a
+ 1114  clear docker images
+ 1115  docker images
+ 1116  clear
+ 1117  docker images
+ 1118  docker run -itd --name newcontainer -p8080:5000 newimage
+ 1119  docker run -itd --name newcontainer -p8080:5000 newimage:1.0
+ 1120  docker ps -a
+ 1121  clear
+ 1122  docker ps 
+ 1123  docker ps -a
+ 1124  docker rm 34afcf9e47f3
+ 1125  docker run -d --name newcont -p8080:5000 newimage:1.0
+ 1126  docker ps -a
+ 1127  docker images
+ 1128  docker ps -a
+ 1129  docker rm d212470293a8
+ 1130  docker image prine -a
+ 1131  docker image prune -a
+ 1132  clear
+ 1133  exit
+ 1134  ls
+ 1135  cd devops/
+ 1136  ls
+ 1137  cd
+ 1138  cd devops/
+ 1139  ls
+ 1140  clear
+ 1141  ls
+ 1142  cd ../dockerlab/lab1/
+ 1143  ls
+ 1144  cat app.py 
+ 1145  python3 app.py 
+ 1146  clear
+ 1147  cd dockerlab/lab1/
+ 1148  cat app.py 
+ 1149  python
+ 1150  python3 -v
+ 1151  clear
+ 1152  python --version
+ 1153  cay Dockerfile 
+ 1154  cat Dockerfile 
+ 1155  cat app.py 
+ 1156  python3 app.py 
+ 1157  docker ps 
+ 1158  docker ps  -a
+ 1159  docker images
+ 1160  clear
+ 1161  docker ps -a
+ 1162  docker images
+ 1163  docker biuld -t pyimage:1.0 .
+ 1164  ls
+ 1165  clear
+ 1166  ls
+ 1167  systemctl status docker
+ 1168  clear
+ 1169  ls
+ 1170  docker biuld -t pyimage:1.0 .
+ 1171  docker build -t pyimage:1.0 .
+ 1172  docker images
+ 1173  docker run -d --name pycontainer -p8060:5000 pyimage:1.0
+ 1174  docker ps
+ 1175  dockerp
+ 1176  docker ps -a
+ 1177  vi app.py 
+ 1178  vi Dockerfile 
+ 1179  docker image prune -y
+ 1180  docker images prune -y
+ 1181  docker images prune -a
+ 1182  docker images
+ 1183  docker ps -a
+ 1184  docker rm 21ed89b4fba8
+ 1185  docker images prune -a
+ 1186  docker images
+ 1187  docker images prune
+ 1188  clear
+ 1189  docker images
+ 1190  docker rmi pyimage
+ 1191  docker images:1.0
+ 1192  docker rmi 639e811db027
+ 1193  clear
+ 1194  docker build -t pyimage:1.0 .
+ 1195  docker images
+ 1196  docker run -d --name pycontainer -p8060:5000 pyimage:1.0
+ 1197  docker ps -a
+ 1198  docker exec -it afc9e3243a11 /bin/bash
+ 1199  curl 34.105.175.69:8060
+ 1200  curl 34.105.175.69:5000
+ 1201  docker ps 
+ 1202  docker ps -a
+ 1203  clear
+ 1204  cat Dockerfile 
+ 1205  docker exec -it afc9e3243a11 /bin/bash
+ 1206  clear
+ 1207  docker ps 
+ 1208  curl 34.105.175.69:8060
+ 1209  curl http:google.com
+ 1210  curl http://google.com
+ 1211  curl http://34.105.175.69:8060
+ 1212  clear
+ 1213  docker images
+ 1214  docker ps 
+ 1215  docker stop afc9e3243a11
+ 1216  docker rm afc9e3243a11
+ 1217  docker ps -a
+ 1218  docker run -d --name pycontainer -p8080 pyimage:1.0
+ 1219  docker ps 
+ 1220  clear
+ 1221  docker ps 
+ 1222  docker rm 26747e18aab3
+ 1223  docker stop 26747e18aab3
+ 1224  docker rm 26747e18aab3
+ 1225  clear
+ 1226  docker run -d --name pycontainer -p8080:5000 pyimage:1.0
+ 1227  docker ps 
+ 1228  curl 34.105.175.69:8080
+ 1229  curl 34.105.175.69:80
+ 1230  clear
+ 1231  sysytemctl status apache2
+ 1232  systemctl status apache2
+ 1233  systemctl stop apache2
+ 1234  sudo systemctl stop apache2
+ 1235  systemctl status apache2
+ 1236  clear
+ 1237  systemctl status apache2
+ 1238  curl 34.105.175.69:80
+ 1239  curl 34.105.175.69:8080
+ 1240  curl 34.105.175.69:5000
+ 1241  clear
+ 1242  docker ps -a
+ 1243  docker exec -it /bin/bash
+ 1244  docker exec -it 8d48625616d1/bin/bash
+ 1245  docker exec -it 8d48625616d1 /bin/bash
+ 1246  docker stop 8d48625616d1
+ 1247  clear
+ 1248  docker run -d --name pycontainer1 -p8080:5001 pyimage:1.0
+ 1249  docker ps -a
+ 1250  docker ps 
+ 1251  docker exec -it 2ae5a17f0ed8 /bin/bash
+ 1252  docker stop 2ae5a17f0ed8
+ 1253  docker rm 2ae5a17f0ed8
+ 1254  docker ps -a
+ 1255  docker rm 8d48625616d1
+ 1256  clear
+ 1257  docke rimages
+ 1258  docker images
+ 1259  docker image-as
+ 1260  docker image -a
+ 1261  docker images -a
+ 1262  docker images prune -a
+ 1263  docker image prune -a
+ 1264  vi Dockerfile 
+ 1265  clear
+ 1266  docker build -t pyimage:1.0 .
+ 1267  docker images
+ 1268  clear
+ 1269  docker images
+ 1270  docker run -d --name pycontainer -p8080:5001 pyimage:1.0
+ 1271  docker ps
+ 1272  docker exec -it e4e2c1b74fd6 /bin/bash
+ 1273  cat Dockerfile 
+ 1274  cat app.py 
+ 1275  docker ps -a
+ 1276  docker stop e4e2c1b74fd6
+ 1277  docker run -d --name http-servr -p8081:80 httpd
+ 1278  docker images
+ 1279  docker ps
+ 1280  docker exec -it f1859557d7a0 /bin/bash
+ 1281  curl 34.105.175.69:8081
+ 1282  clear
+ 1283  docker ps -a
+ 1284  clear
+ 1285  docker ps
+ 1286  curl 34.105.175.69:8081
+ 1287  clear
+ 1288  docker ps
+ 1289  curl 34.105.175.69:8081
+ 1290  clear
+ 1291  docker ps -a
+ 1292  docker stop f1859557d7a0
+ 1293  clear
+ 1294  docker ps -a
+ 1295  docker ps 
+ 1296  docker images
+ 1297  clear
+ 1298  exit
+ 1299  python -v
+ 1300  clear
+ 1301  docker images
+ 1302  docker ps
+ 1303  docker ps -a
+ 1304  docker start e4e2c1b74fd6
+ 1305  docker ps -a
+ 1306  docker exec -it e4e2c1b74fd6 /bin/bash
+ 1307  clear
+ 1308  docker ps
+ 1309  docker stop e4e2c1b74fd6
+ 1310  docker ps -a
+ 1311  docker rm e4e2c1b74fd6 e4e2c1b74fd6
+ 1312  docker ps -a
+ 1313  docker rm f1859557d7a0
+ 1314  docker ps -a
+ 1315  docker images
+ 1316  clear
+ 1317  cd dockerlab/lab1/
+ 1318  cat Dockerfile 
+ 1319  python --version
+ 1320  python3 --version
+ 1321  python3 app.py 
+ 1322  cat app.py 
+ 1323  cat Dockerfile 
+ 1324  aptget install pip3 flask
+ 1325  apt-get install pip3 flask
+ 1326  sudo apt-get install pip3 flask
+ 1327  sudo apt-get pip3install flask
+ 1328  sudo apt-get pip3 install flask
+ 1329  sudo  pip3 install flask
+ 1330  clear
+ 1331  cat Dockerfile 
+ 1332  python3 -m flask --version
+ 1333  sudo pip3 install flask
+ 1334  sudo pip3 install Flask
+ 1335  sudo apt pip3 install Flask
+ 1336  sudo apt-get pip3 install Flask
+ 1337  python -v
+ 1338  python3 -v
+ 1339  docker ps -a
+ 1340  exit
+ 1341  cd dockerlab/lab1/
+ 1342  ls
+ 1343  cat Dockerfile 
+ 1344  vi Dockerfile 
+ 1345  cat Dockerfile 
+ 1346  clear
+ 1347  docker images
+ 1348  docker rmi 16fbd8b29dc5 6e794a483258
+ 1349  clear
+ 1350  docker images
+ 1351  docker buld -t newpyimage:1.0 .
+ 1352  docker build -t newpyimage:1.0 .
+ 1353  docker images
+ 1354  docker run -d --name pyimage -p 8080:5001 newpyimage:1.0
+ 1355  docker ps -a
+ 1356  docker exec -it 7b508e5c4243 /bin/bash
+ 1357  docker ps -a
+ 1358  cat app.py 
+ 1359  cat Dockerfile 
+ 1360  docker stop 7b508e5c4243
+ 1361  docker run -d --name pyimage1 -p 8080:5000 newpyimage:1.0
+ 1362  docker ps -a
+ 1363  docker exec -it 16c8ac317fed /bin/bash
+ 1364  docker ps -a
+ 1365  docker rm 7b508e5c4243
+ 1366  clear
+ 1367  docker ps
+ 1368  docker logs pyimage1
+ 1369  sudo apt npm install -g @angular/cli
+ 1370  sudo apt-get npm install -g @angular/cli
+ 1371  sudo apt-get npm install  @angular/cli
+ 1372  cd dockerlab/lab1/
+ 1373  vi angular
+ 1374  vi angular 
+ 1375  ls
+ 1376  docker build -t angularimage:1.0 angular
+ 1377  docker build -t angularimage:1.0 /home/preethimbbs22/dockerlab/lab1/angular
+ 1378  cat Dockerfile 
+ 1379  cat angular 
+ 1380  docker build -t angularimage:1.0 /home/preethimbbs22/dockerlab/lab1/angular
+ 1381  ls
+ 1382  mv Dockerfile Dockerfile1
+ 1383  ls
+ 1384  mv angular Dockerfile
+ 1385  ls
+ 1386  docker build -t angularimage:1.0 .
+ 1387  vi Dockerfile
+ 1388  docker build -t angularimage:1.0 .
+ 1389  vi Dockerfile
+ 1390  docker build -t angularimage:1.0 .
+ 1391  vi Dockerfile
+ 1392  docker build -t angularimage:1.0 .
+ 1393  vi Dockerfile
+ 1394  docker build -t angularimage:1.0 .
+ 1395  vi Dockerfile
+ 1396  docker build -t angularimage:1.0 .
+ 1397  sudo apt-get install curl
+ 1398  ls
+ 1399  mv Dockerfile angular
+ 1400  ls
+ 1401  mv Dockerfile1  Dockerfile
+ 1402  ls
+ 1403  git --version
+ 1404  clear
+ 1405  git clone https://github.com/Rose-stack/dockerizing-an-angular-app.git
+ 1406  ls
+ 1407  mkdir git
+ 1408  ls
+ 1409  mv dockerizing-an-angular-app/ git/
+ 1410  ls
+ 1411  cd git/
+ 1412  ls
+ 1413  cd dockerizing-an-angular-app/
+ 1414  ls
+ 1415  clear
+ 1416  ls
+ 1417  ng new demo-app
+ 1418  sudo apt-get ng new demo-app
+ 1419  cat /etc/os*
+ 1420  ls
+ 1421  cat dead.letter 
+ 1422  clear
+ 1423  ls
+ 1424  cd dockerlab/lab1/
+ 1425  ls
+ 1426  mv angular Dockerfile.angular
+ 1427  vi Dockerfile.angular 
+ 1428  docker ps -a
+ 1429  docker rm ab9fd5def6d1 dad80bb47975 c6283fff4890 f49def63c04d f4e5ce0e250e 16c8ac317fed
+ 1430  docker ps -a
+ 1431  docker images
+ 1432  clear
+ 1433  docker build -t angu:1.0 Dockerfile.angular .
+ 1434  docker build -t angu:1.0 Dockerfile.angular 
+ 1435  docker build -t angu:1.0 Dockerfile.angular .
+ 1436  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1437  vi Dockerfile.angular 
+ 1438  ls
+ 1439  docker images
+ 1440  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1441  vi Dockerfile.angular 
+ 1442  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1443  vi Dockerfile.angular 
+ 1444  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1445  docker images
+ 1446  vi Dockerfile.angular 
+ 1447  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1448  docker images
+ 1449  vi Dockerfile.angular 
+ 1450  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1451  docker images
+ 1452  vi Dockerfile.angular 
+ 1453  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1454  vi Dockerfile.angular 
+ 1455  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1456  docker images
+ 1457  docker run --rm angu:1.0
+ 1458  docker run --rm angu:1.0 https:..google.com
+ 1459  vi Dockerfile.angular 
+ 1460  docker images
+ 1461  docker ps -a
+ 1462  docker rm $(docker ps -a)
+ 1463  docker rm -f $(docker ps -a)
+ 1464  clear
+ 1465  docker ps -a
+ 1466  docker rm 8e74dd620846 a387012d9f2e fab9a24cc32f 4d247c92aa9a 5da7d6be0805 1ec35151803b 5829760aad2e
+ 1467  docker os -a
+ 1468  docker ps -a
+ 1469  clear
+ 1470  docker images
+ 1471  docker rmi angu:1.0 
+ 1472  docker images
+ 1473  vi Dockerfile.angular 
+ 1474  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1475  docker ps -a
+ 1476  vi Dockerfile.angular 
+ 1477  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1478  docker images
+ 1479  docker rmi angu:1.0 
+ 1480  vi Dockerfile.angular 
+ 1481  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1482  cat Dockerfile.angular 
+ 1483  vi Dockerfile.angular 
+ 1484  docker build -t angu:1.0 -f Dockerfile.angular .cat 
+ 1485  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1486  vi Dockerfile.angular 
+ 1487  cd dockerlab/lab1/
+ 1488  ls
+ 1489  cat Dockerfile.angular 
+ 1490  docker images
+ 1491  vi Dockerfile.angular 
+ 1492  ls
+ 1493  clear
+ 1494  docker images
+ 1495  docker rmi angu:1.0 
+ 1496  clear
+ 1497  docker build -t angularimage:1.0 -f Dockerfile.angular .
+ 1498  docker images
+ 1499  docker imagesdocker ps -a
+ 1500  docker ps -a
+ 1501  docker rmi 9e914714248d
+ 1502  docker rm 9e914714248d
+ 1503  clear
+ 1504  docker images
+ 1505  docker rmi cb5ced3ade2c
+ 1506  clear
+ 1507  vi Dockerfile.angular 
+ 1508  ls
+ 1509  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1510  docker ps -a
+ 1511  docker rm 2eafe28b6537
+ 1512  docker ps -a
+ 1513  docker images
+ 1514  docker rmi 478621dc5097
+ 1515  vi Dockerfile.angular 
+ 1516  docker build -t angu:1.0 -f Dockerfile.angular .
+ 1517  docker ps
+ 1518  docker run -itd -p 8060:4200 --name angularcont angu:1.0 
+ 1519  docker ps -a
+ 1520  clear
+ 1521  docker ps
+ 1522  docker ps -a
+ 1523  doecker exex -it 05b6a12b4c53 /bash
+ 1524  docker logs 05b6a12b4c53
+ 1525  docker -v
+ 1526  doecker exex -it 05b6a12b4c53 sh
+ 1527  docker images
+ 1528  doecker exec -it 05b6a12b4c53 sh
+ 1529  docker exec -it 05b6a12b4c53 sh
+ 1530  docker log 05b6a12b4c53
+ 1531  docker logs 05b6a12b4c53
+ 1532  vi Dockerfile.angular 
+ 1533  clear
+ 1534  docker images
+ 1535  docker build -t angu:2.0 -f Dockerfile.angular .
+ 1536  docker ps -a
+ 1537  docker rm 01d4d9b808df 05b6a12b4c53
+ 1538  docker ps -a
+ 1539  vi Dockerfile.angular 
+ 1540  docker images
+ 1541  docker build -t angu:2.0 -f Dockerfile.angular .
+ 1542  docker images
+ 1543  docker ps -a
+ 1544  docker rm a01e8285d801
+ 1545  clear
+ 1546  docker images
+ 1547  docker ps -a
+ 1548  cat Dockerfile.angular 
+ 1549  vi Dockerfile.angular 
+ 1550  docker images
+ 1551  docker ps -a
+ 1552  docker build -t angu:2.0 -f Dockerfile.angular .
+ 1553  docker ps -a
+ 1554  docker rm f771a6feb811
+ 1555  vi Dockerfile.angular 
+ 1556  docker images
+ 1557  docker rmi 8b6a3cb0712c
+ 1558  docker build -t angu:2.0 -f Dockerfile.angular .
+ 1559  docker ps -a
+ 1560  docker rm 4c5f337ee37b
+ 1561  clear
+ 1562  docker images
+ 1563  docker rmi 3585a6003ce4
+ 1564  vi Dockerfile.angular 
+ 1565  docker build -t angu:2.0 -f Dockerfile.angular .
+ 1566  ocker images
+ 1567  docker images
+ 1568  docker run -d -port 8060:4200 --name angconta angu:2.0 
+ 1569  docker run -d -p 8060:4200 --name angconta angu:2.0 
+ 1570  docker ps 
+ 1571  docker ps -a
+ 1572  docker logs 23eba19f56ff
+ 1573  ls
+ 1574  cd git/
+ 1575  ls
+ 1576  cd dockerizing-an-angular-app/
+ 1577  ls
+ 1578  vi Dockerfile
+ 1579  dockers ps -a
+ 1580  docker ps -a
+ 1581  docker rm 23eba19f56ff
+ 1582  docker ps -a
+ 1583  docker images
+ 1584  docker build -f angular:1.0 .
+ 1585  ls
+ 1586  docker build -t angular:1.0 .
+ 1587  docker images
+ 1588  docker ps -a
+ 1589  docker run -d -p 8060:4200 --name ancont  angular:1.0
+ 1590  docker ps 
+ 1591  docker logs 240eed5f90f5
+ 1592  docker exec -it 240eed5f90f5 /bin/bash
+ 1593  docker exec -it 240eed5f90f5 sh
+ 1594  docker ps
+ 1595  docker stop 240eed5f90f5
+ 1596  docker rm 240eed5f90f5
+ 1597  docker images
+ 1598  clear
+ 1599  docker images
+ 1600  docker run -d --name anguuu -p 8088:4200 angular:1.0
+ 1601  docker ps -a
+ 1602  cat Dockerfile 
+ 1603  docker exec -it 3fd0d30e4249 /bin/bash
+ 1604  ls
+ 1605  cd ../..
+ 1606  ls
+ 1607  vi Dockerfile.angular 
+ 1608  docker build -t angular:1.0 -f Dockerfile.angular . jk
+ 1609  docker ps -a
+ 1610  docker stop 3fd0d30e4249
+ 1611  docker rm 3fd0d30e4249
+ 1612  docker ps -a
+ 1613  docker images
+ 1614  docker rmi angular 8bafbd012839 c8d03f6b8b91 8e69714aa82b
+ 1615  docker images
+ 1616  docker rmi angular angu
+ 1617  docker rmi angular:1.0 angu:2.0
+ 1618  docker images
+ 1619  clear
+ 1620  docker images
+ 1621  docker build -t angular:1.0 -f Dockerfile.angular . 
+ 1622  cat Dockerfile.angular 
+ 1623  docker images
+ 1624  docker run -d --name angucon -p 8060:4200 angular:1.0
+ 1625  docker ps 
+ 1626  docker ps -a
+ 1627  docker rm 7ff9ec031bd4
+ 1628  docker run  --name angucon -p 8060:4200 angular:1.0
+ 1629  clear
+ 1630  docker ps -a
+ 1631  cat Dockerfile.angular 
+ 1632  vi Dockerfile.angular 
+ 1633  docker images
+ 1634  docker rmi 4bf218628387 5539bcbc2b41
+ 1635  docker images
+ 1636  docker rmi 4bf218628387 c8d03f6b8b91
+ 1637  docker images
+ 1638  docker rmi 4bf218628387
+ 1639  docker images
+ 1640  clear
+ 1641  ls
+ 1642  docker images
+ 1643  docker rmi 4bf218628387
+ 1644  docker ps 
+ 1645  docker ps -a
+ 1646  docker rm d4cc5000f6a9
+ 1647  docker rmi 4bf218628387
+ 1648  docker build -t angular:1.0 -f Dockerfile.angular . 
+ 1649  docker images
+ 1650  docker ps -a
+ 1651  docker run  --name angucon -p 8060:4200 angular:1.0
+ 1652  docker images
+ 1653  docker ps -a
+ 1654  curl http://localhost:4200/
+ 1655  docker exec -it c53c48a /bin/bash
+ 1656  docker ps -a
+ 1657  clear
+ 1658  ls
+ 1659  cd dockerlab/lab1/
+ 1660  ls
+ 1661  cat Dockerfile.angular 
+ 1662  docker ps -a
+ 1663  vi Dockerfile.angular 
+ 1664  docker images
+ 1665  clear
+ 1666  docker images
+ 1667  docker build -t angular:2.0 -f Dockerfile.angular .
+ 1668  docker run -d -name angucontainer -p 8080:4200 angular:2.0
+ 1669  docker run -d --name angucontainer -p 8080:4200 angular:2.0
+ 1670  docker ps -a
+ 1671  docker logs d0ecee04fad5
+ 1672  clear
+ 1673  docker ps -a
+ 1674  docker rm d0ecee04fad5
+ 1675  docker ps -a
+ 1676  docker images
+ 1677  cat Dockerfile.angular 
+ 1678  docker run  --name angucontainer -p 8080:4200 angular:2.0
+ 1679  clear
+ 1680  docker ps -a
+ 1681  docker rm 22d34ed98b8d
+ 1682  clear
+ 1683  docker run  --name angucontainer -p 8080:4200 angular:2.0
+ 1684  cat Dockerfile.angular 
+ 1685  docker ps -a
+ 1686  docker rm 22d34ed98b8d
+ 1687  docker rm 1eb738680163
+ 1688  clear
+ 1689  docker ps 
+ 1690  docker stop c53c48a92c45
+ 1691  docker images
+ 1692  docker ps -a
+ 1693  clear
+ 1694  docker build -t angular:2.0 -f Dockerfile.angular .
+ 1695  clear
+ 1696  ls
+ 1697  docker ps -a
+ 1698  clear
+ 1699  ls
+ 1700  mkdir httpd
+ 1701  cd httpd/
+ 1702  vi index.html
+ 1703  vi Dockerfile
+ 1704  docker build -t httpd:1.0
+ 1705  docker build -t httpd:1.0 .
+ 1706  docker run -d --name httpdconta -p 8060:80 httpd:1.0
+ 1707  docker ps -a
+ 1708  clear
+ 1709  ls
+ 1710  cat index.html 
+ 1711  cat Dockerfile 
+ 1712  docker ps -a
+ 1713  docker ps
+ 1714  docker stop 960e0d8498c5
+ 1715  docker images
+ 1716  ocker ps -a
+ 1717  docker ps -a
+ 1718  exit
+ 1719  docker images
+ 1720  docker ps -a
+ 1721  clear
+ 1722  cd dockerlab/lab1/
+ 1723  cat Dockerfile
+ 1724  cat app.py 
+ 1725  mkdir python
+ 1726  cd python/
+ 1727  vi app.py
+ 1728  vi Dockerfile
+ 1729  ls
+ 1730  docker build -t python:1.0 .
+ 1731  docker run -d -p8060:5000 --name pythoncont python:1.0
+ 1732  docker ps -a
+ 1733  clear
+ 1734  ls
+ 1735  cat Dockerfile 
+ 1736  cat app.py 
+ 1737  cd ..
+ 1738  ls
+ 1739  cat Dockerfile
+ 1740  cat app.py 
+ 1741  docker ps -a
+ 1742  docker stop d94a53791b0b
+ 1743  ls
+ 1744  docker images
+ 1745  docker rmi 4e821e4a4e1f
+ 1746  docker images
+ 1747  docker rmi httpd:2.4 
+ 1748  docker images
+ 1749  clear
+ 1750  docker images
+ 1751  docker build -t firstpy:1.0 .
+ 1752  docker images
+ 1753  docker run -d -p8060:5000 --name firstpycont firstpy:1.0 
+ 1754  docker ps
+ 1755  docker ps -a
+ 1756  docker ps 
+ 1757  docker stop d675297d2925
+ 1758  docker rm d675297d2925
+ 1759  clear
+ 1760  cd python/
+ 1761  ls
+ 1762  cat app.py 
+ 1763  cat Dockerfile 
+ 1764  docker ps 
+ 1765  docker ps  -a
+ 1766  docker start d94a53791b0b
+ 1767  docker ps  
+ 1768  ocker ps
+ 1769  docker ps
+ 1770  docker stop d94a53791b0b
+ 1771  docker ps -a
+ 1772  docker images
+ 1773  docker ps -a
+ 1774  exit
+ 1775  ls
+ 1776  cd dockerlab/lab1/
+ 1777  ls
+ 1778  clear
+ 1779  ls
+ 1780  cd python/
+ 1781  ls
+ 1782  cat Dockerfile 
+ 1783  cat app.py 
+ 1784  docker images
+ 1785  clear
+ 1786  cat Dockerfile 
+ 1787  cat app.py 
+ 1788  docker build -t pythonimg:1.0 .
+ 1789  docker images
+ 1790  docker run -d -p 8060:5000 --name pycontiner1 pythontimg:1.0
+ 1791  docker run -d -p 8060:5000 --name pycontiner1 
+ 1792  docker run -d -p 8060:5000 --name pycontiner1 pythonimg:1.0
+ 1793  clear
+ 1794  docker ps
+ 1795  docker ps -a
+ 1796  docker ps 
+ 1797  docker stop a2aa9e54fae3
+ 1798  docker rm a2aa9e54fae3
+ 1799  docke rps -a
+ 1800  docker ps -a
+ 1801  clear
+ 1802  docker images
+ 1803  docker rmi firstpy:1.0
+ 1804  clear
+ 1805  mvn --v
+ 1806  mvn --version
+ 1807  sudo apt install maven -y
+ 1808  mvn --version
+ 1809  ls
+ 1810  cd
+ 1811  ls
+ 1812  cd dockerlab/
+ 1813  ls
+ 1814  cd lab1/
+ 1815  ls
+ 1816  mkdir java
+ 1817  cd java/
+ 1818  clear
+ 1819  mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-maven-docker-project -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+ 1820  ls
+ 1821  cd my-maven-docker-project/
+ 1822  ls
+ 1823  clear
+ 1824  ls
+ 1825  cat pom.xml 
+ 1826  vi pom.xml 
+ 1827  clear
+ 1828  vi pom.xml 
+ 1829  s
+ 1830  ls
+ 1831  cd src/
+ 1832  ls
+ 1833  cd main/java/com/mycompany/app/
+ 1834  ls
+ 1835  cat App.java 
+ 1836  clear
+ 1837  ls
+ 1838  vi app.java
+ 1839  ls
+ 1840  mv App.java default-App.java
+ 1841  ls
+ 1842  mv app.java App.java
+ 1843  ls
+ 1844  touch Dockerfile
+ 1845  ls
+ 1846  rm Dockerfile 
+ 1847  ls
+ 1848  cd ../../../..
+ 1849  ls
+ 1850  cd java/
+ 1851  ls
+ 1852  pwd
+ 1853  cd ../../..
+ 1854  ls
+ 1855  touch Dockerfile
+ 1856  ls
+ 1857  vi pom.xml 
+ 1858  lear
+ 1859  mvn install
+ 1860  mvn install -e
+ 1861  ls
+ 1862  vi pom.xml 
+ 1863  mvn install 
+ 1864  vi pom.xml 
+ 1865  mvn install 
+ 1866  vi pom.xml 
+ 1867  ls
+ 1868  cd target/
+ 1869  ls
+ 1870  cd ..
+ 1871  ls
+ 1872  mvn install 
+ 1873  java --v
+ 1874  java --version
+ 1875  cd src/main/java/com/mycompany/app/
+ 1876  ls
+ 1877  mv App.java App.java1
+ 1878  ls
+ 1879  mv default-App.java App.java
+ 1880  cd
+ 1881  cd dockerlab/lab1/java/
+ 1882  ls
+ 1883  cd my-maven-docker-project/
+ 1884  ls
+ 1885  mvn install
+ 1886  ls
+ 1887  cd target/
+ 1888  ls
+ 1889  java -jar my-maven-docker-project.jar 
+ 1890  clear
+ 1891  ls
+ 1892  cd ..
+ 1893  ls
+ 1894  cd ..
+ 1895  ls
+ 1896  cd java/my-maven-docker-project/
+ 1897  ls
+ 1898  vi Dockerfile 
+ 1899  docker build -t java:1.0
+ 1900  docker build -t java:1.0 .
+ 1901  docker run -d -p8060:8080 --name javacont java:1.0
+ 1902  docker ps
+ 1903  docker ps -a
+ 1904  docker rm 75032ed09d53
+ 1905  docker ps -a
+ 1906  clear
+ 1907  ls
+ 1908  vi Dockerfile 
+ 1909  ls
+ 1910  docker images
+ 1911  docker rmi 4ca7f31c4c61
+ 1912  docker images
+ 1913  docker build -t java:1.0 .
+ 1914  at Dockerfile 
+ 1915  cat Dockerfile 
+ 1916  vi Dockerfile 
+ 1917  docker build -t java:1.0 .
+ 1918  vi Dockerfile 
+ 1919  docker build -t java:1.0 .
+ 1920  history >> commands
+ 1921  ls
+ 1922  history
+ 1923  cat history >> commands
+ 1924  cat history > commands
+ 1925  echo history > commands
+ 1926  ls
+ 1927  vi commands 
+ 1928  history >> commands 
